@@ -14,7 +14,7 @@ $(".closeBtn").on("click", function() {
 $(".c-nav-link").on("click", function(e){
     const sectionId = $(e.target).attr("href");
     const sectionOffset = $(sectionId).offset().top;
-    $("body").animate({scrollTop: sectionOffset}, 1000)
+    $("html, body").animate({scrollTop: sectionOffset}, 1000)
 });
 
 // Accordion
